@@ -1,0 +1,20 @@
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Your_strong_password123
+    ports:
+      - "1433:1433"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ConnectionStrings__Default=Server=sql,1433;Database=BankDb;User Id=sa;Password=Your_strong_password123;TrustServerCertificate=True
+    depends_on:
+      - sql
+    ports:
+      - "8080:8080"
+
