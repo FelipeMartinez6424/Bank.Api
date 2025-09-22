@@ -14,18 +14,18 @@ public class AccountsController : ControllerBase
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetById(int id)
         => (await _svc.GetByIdAsync(id)) is { } dto ? Ok(dto) : NotFound();
-
+    
     [HttpPost]
     public async Task<IActionResult> Create(AccountCreateDto dto)
     {
         var created = await _svc.CreateAsync(dto);
         return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
     }
-
+    
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Update(int id, AccountUpdateDto dto)
         => await _svc.UpdateAsync(id, dto) ? NoContent() : NotFound();
-
+    
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id)
         => await _svc.DeleteAsync(id) ? NoContent() : NotFound();

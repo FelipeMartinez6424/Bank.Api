@@ -10,14 +10,16 @@ Release/
 *.user
 *.suo
 
-# Logs
+
+# logs
 *.log
 
 # NuGet
 packages/
 *.nupkg
 
-# Rider/VSCode (opcional)
+# IDE
 .idea/
 .vscode/
 EOF
+

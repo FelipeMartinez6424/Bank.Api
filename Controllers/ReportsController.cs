@@ -1,83 +1,25 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Bank.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Bank.Api.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class ReportsController : ControllerBase
 {
-    public class ReportsController : Controller
+    private readonly IReportService _svc;
+    public ReportsController(IReportService svc) => _svc = svc;
+
+    
+    [HttpGet]
+    public async Task<IActionResult> Get([FromQuery] int clientId, [FromQuery] DateTime from, [FromQuery] DateTime to, [FromQuery] string format = "json")
     {
-        // GET: ReportsController
-        public ActionResult Index()
+        if (string.Equals(format, "pdf", StringComparison.OrdinalIgnoreCase))
         {
-            return View();
+            var b64 = await _svc.GetStatementPdfBase64Async(clientId, from, to);
+            return Ok(new { contentType = "application/pdf", base64 = b64, fileName = $"statement_{clientId}_{from:yyyyMMdd}_{to:yyyyMMdd}.pdf" });
         }
 
-        // GET: ReportsController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: ReportsController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ReportsController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ReportsController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: ReportsController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ReportsController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ReportsController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        var data = await _svc.GetStatementAsync(clientId, from, to);
+        return Ok(data);
     }
 }
+

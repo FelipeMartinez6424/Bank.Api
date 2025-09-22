@@ -1,7 +1,40 @@
-bin
-obj
-.vscode
-.git
+# Archivos y carpetas de build que no deben copiarse al contenedor
+bin/
+obj/
+
+# Configuración de usuario de Visual Studio
+.vs/
+.vscode/
+
+# Git
+.git/
 .gitignore
-**/*.user
-**/*.suo
+
+# Archivos de sistema
+*.db
+*.mdf
+*.ldf
+*.log
+
+# Archivos temporales
+*.swp
+*.tmp
+*.user
+*.suo
+*.cache
+*.pdb
+
+# Dependencias locales de paquetes
+packages/
+.nuget/
+
+# Archivos de publicación locales
+out/
+
+# Carpetas de test result
+TestResults/
+
+# Docker
+docker-compose.override.yml
+
+Bank.Api.Tests/

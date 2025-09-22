@@ -1,0 +1,481 @@
+{
+	"info": {
+		"_postman_id": "56de1fb6-b262-4070-9de9-d67759696376",
+		"name": "bank",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48624474",
+		"_collection_link": "https://franal1911-3139083.postman.co/workspace/luis's-Workspace~0861e6db-97ce-4a77-8ecd-2828d935f7b4/collection/48624474-56de1fb6-b262-4070-9de9-d67759696376?action=share&source=collection_link&creator=48624474"
+	},
+	"item": [
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clients",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createclient",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"201 Created\", ()=>pm.response.to.have.status(201));\r",
+									"pm.environment.set(\"clientId\", pm.response.json().id);\r",
+									"    "
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Test User\",\r\n  \"gender\": \"M\",\r\n  \"age\": 30,\r\n  \"identification\": \"CC-99\",\r\n  \"address\": \"Test Street\",\r\n  \"phone\": \"123456789\",\r\n  \"clientCode\": \"T99\",\r\n  \"password\": \"pw99\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clients",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clientbyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clients/{{ClientId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clients",
+								"{{ClientId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editclient",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const d = pm.response.json();\r",
+									"if (d.id) pm.environment.set(\"clientId\", d.id);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Test User\",\r\n  \"gender\": \"M\",\r\n  \"age\": 30,\r\n  \"identification\": \"CC-99\",\r\n  \"address\": \"Test Street\",\r\n  \"phone\": \"123456789\",\r\n  \"clientCode\": \"T99\",\r\n  \"password\": \"pw99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clients/4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clients",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clients/{{clientId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clients",
+								"{{clientId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"\r",
+							"if (pm.environment.get(\"token\")) {\r",
+							"  pm.request.headers.add({\r",
+							"    key: \"Authorization\",\r",
+							"    value: \"Bearer \" + pm.environment.get(\"token\")\r",
+							"  });\r",
+							"}\r",
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "new account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const d = pm.response.json();\r",
+									"if (d.id) pm.environment.set(\"accountId\", d.id);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountNumber\": \"000123456789\",\r\n  \"accountType\": \"Savings\",          // o \"Checking\", según tu enum/string\r\n  \"initialBalance\": 500.00,\r\n  \"isActive\": true,\r\n  \"clientId\": {{clientId}}                      // un Client existente\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/accounts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/accounts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AccountbyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/accounts/{{accountId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"accounts",
+								"{{accountId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editaccount",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountType\": \"Corriente\",\r\n  \"isActive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/accounts/{{accountId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"accounts",
+								"{{accountId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movements",
+			"item": [
+				{
+					"name": "New movements",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const d = pm.response.json();\r",
+									"if (d.id) pm.environment.set(\"movementId\", d.id);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountId\": {{accountId}},\r\n  \"movementType\": 1,   // por ejemplo: 0=Credit, 1=Debit (ajusta a tu enum)\r\n  \"amount\": 100.00,\r\n  \"occurredAt\": \"2025-09-20T12:00:00Z\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/movements",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movements",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "momentbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movements/{{movementId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movements",
+								"{{movementId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movements/{{movementId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movements",
+								"{{movementId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "report json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/reports?clientId={{clientId}}&from=2025-01-01&to=2025-12-31&format=json",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"reports"
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "{{clientId}}"
+								},
+								{
+									"key": "from",
+									"value": "2025-01-01"
+								},
+								{
+									"key": "to",
+									"value": "2025-12-31"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "report pdf",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"\r",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

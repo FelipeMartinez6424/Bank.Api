@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bank.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b79aa8213db4470c004e2f064679a033ff748f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bank.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bank.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

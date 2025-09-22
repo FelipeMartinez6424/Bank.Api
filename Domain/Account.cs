@@ -5,8 +5,8 @@ namespace Bank.Api.Domain;
 public class Account
 {
     public int Id { get; set; }
-    public string AccountNumber { get; set; } = null!; // unique
-    public string AccountType { get; set; } = null!;   // Savings/Checking (Ahorro/Corriente)
+    public string AccountNumber { get; set; } = null!; 
+    public string AccountType { get; set; } = null!; 
     public decimal InitialBalance { get; set; }
     public decimal CurrentBalance { get; set; }
     public bool IsActive { get; set; } = true;

@@ -11,6 +11,6 @@ public class Person
     public string Identification { get; set; } = null!;
     public string Address { get; set; } = null!;
     public string Phone { get; set; } = null!;
-    public Client? Client { get; set; } // one-to-one
+    public Client? Client { get; set; } 
 }
 

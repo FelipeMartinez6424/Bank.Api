@@ -1,4 +1,6 @@
-﻿using Bank.Api.Domain;
+﻿using System.Security.Cryptography;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using Bank.Api.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bank.Api.Infrastructure;
@@ -14,15 +16,17 @@ public static class DbInitializer
         var juan = new Person { Name = "Juan Osorio", Gender = "M", Age = 35, Identification = "CC-3", Address = "13 junio y Equinoccial", Phone = "098874587" };
 
         db.Persons.AddRange(jose, marianela, juan);
-        await db.SaveChangesAsync();
+        await db.SaveChangesAsync(); 
 
+       
         var clients = new[]
         {
-            new Client { Id=jose.Id, ClientCode="1234", PasswordHash="1234", IsActive=true },
-            new Client { Id=marianela.Id, ClientCode="5678", PasswordHash="5678", IsActive=true },
-            new Client { Id=juan.Id, ClientCode="1245", PasswordHash="1245", IsActive=true }
-        };
+                new Client { Id=jose.Id,      ClientCode="1234", PasswordHash="1234", IsActive=true },
+                new Client { Id=marianela.Id, ClientCode="5678", PasswordHash="5678", IsActive=true },
+                new Client { Id=juan.Id,      ClientCode="1245", PasswordHash="1245", IsActive=true }
+            };
         db.Clients.AddRange(clients);
+
         await db.SaveChangesAsync();
 
         var a1 = new Account { AccountNumber = "478758", AccountType = "Savings", InitialBalance = 2000, CurrentBalance = 2000, IsActive = true, ClientId = clients[0].Id };
@@ -33,4 +37,8 @@ public static class DbInitializer
         db.Accounts.AddRange(a1, a2, a3, a4);
         await db.SaveChangesAsync();
     }
+
+    
 }
+
+

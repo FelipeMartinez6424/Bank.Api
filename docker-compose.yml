@@ -3,18 +3,34 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=Your_strong_password123
+      - SA_PASSWORD=${SA_PASSWORD}
     ports:
       - "1433:1433"
+    volumes:
+      - sql-data:/var/opt/mssql
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "bash -lc 'for p in /opt/mssql-tools18/bin/sqlcmd /opt/mssql-tools/bin/sqlcmd; do if [ -x $$p ]; then $$p -S localhost -U sa -P \"${SA_PASSWORD}\" -C -Q \"SELECT 1\" && exit 0; fi; done; exit 1'"
+        ]
+      interval: 10s
+      timeout: 5s
+      start_period: 30s
+      retries: 30
 
   api:
     build:
       context: .
       dockerfile: Dockerfile
-    environment:
-      - ConnectionStrings__Default=Server=sql,1433;Database=BankDb;User Id=sa;Password=Your_strong_password123;TrustServerCertificate=True
     depends_on:
-      - sql
+      sql:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__Default=Server=sql,1433;Database=BankDb;User ID=sa;Password=${SA_PASSWORD};TrustServerCertificate=True;Encrypt=False;MultipleActiveResultSets=True
     ports:
       - "8080:8080"
 
+volumes:
+  sql-data:
