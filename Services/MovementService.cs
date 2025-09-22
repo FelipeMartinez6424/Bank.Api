@@ -20,24 +20,29 @@ public class MovementService : IMovementService
     {
         var acc = await _db.Accounts.Include(a => a.Client)
             .FirstOrDefaultAsync(a => a.Id == dto.AccountId)
-            ?? throw new InvalidOperationException("Account not found.");
+            ?? throw new InvalidOperationException("Cuenta no encontrada.");
 
         var amount = Math.Abs(dto.Amount);
 
         if (dto.MovementType == MovementType.Debit)
         {
+           
             if (acc.CurrentBalance <= 0 || acc.CurrentBalance < amount)
-                throw new InvalidOperationException("Saldo no disponible");
+                throw new InvalidOperationException("Saldo no disponible.");
 
-            var day = (dto.OccurredAt ?? DateTime.UtcNow).Date;
+            
+            var baseDate = (dto.OccurredAt ?? DateTime.UtcNow).Date;
+            var nextDate = baseDate.AddDays(1);
+
             var totalDebitsToday = await _db.Movements
-                .Where(m => m.Account.ClientId == acc.ClientId &&
-                            m.MovementType == MovementType.Debit &&
-                            m.OccurredAt.Date == day)
+                .Where(m => m.Account.ClientId == acc.ClientId
+                         && m.MovementType == MovementType.Debit
+                         && m.OccurredAt >= baseDate
+                         && m.OccurredAt < nextDate)
                 .SumAsync(m => (decimal?)m.Amount) ?? 0m;
 
             if (totalDebitsToday + amount > _dailyLimit)
-                throw new InvalidOperationException("Cupo diario Excedido");
+                throw new InvalidOperationException("Cupo diario excedido.");
 
             acc.CurrentBalance -= amount;
         }
@@ -58,14 +63,29 @@ public class MovementService : IMovementService
         _db.Movements.Add(mov);
         await _db.SaveChangesAsync();
 
-        return new MovementDto(mov.Id, mov.AccountId, acc.AccountNumber, mov.MovementType,
-                               mov.Amount, mov.OccurredAt, mov.AvailableBalanceAfter);
+        return new MovementDto(
+            mov.Id,
+            mov.AccountId,
+            acc.AccountNumber,
+            mov.MovementType,
+            mov.Amount,
+            mov.OccurredAt,
+            mov.AvailableBalanceAfter
+        );
     }
+
     public async Task<MovementDto?> GetByIdAsync(int id) =>
-    await _db.Movements
-        .Where(m => m.Id == id)
-        .Select(m => new MovementDto(m.Id, m.AccountId, m.Account.AccountNumber, m.MovementType, m.Amount, m.OccurredAt, m.AvailableBalanceAfter))
-        .FirstOrDefaultAsync();
+        await _db.Movements
+            .Where(m => m.Id == id)
+            .Select(m => new MovementDto(
+                m.Id,
+                m.AccountId,
+                m.Account.AccountNumber,
+                m.MovementType,
+                m.Amount,
+                m.OccurredAt,
+                m.AvailableBalanceAfter))
+            .FirstOrDefaultAsync();
 
     public async Task<IEnumerable<MovementDto>> GetAllAsync(int? accountId = null, DateTime? from = null, DateTime? to = null)
     {
@@ -77,11 +97,17 @@ public class MovementService : IMovementService
 
         return await q
             .OrderByDescending(m => m.OccurredAt)
-            .Select(m => new MovementDto(m.Id, m.AccountId, m.Account.AccountNumber, m.MovementType, m.Amount, m.OccurredAt, m.AvailableBalanceAfter))
+            .Select(m => new MovementDto(
+                m.Id,
+                m.AccountId,
+                m.Account.AccountNumber,
+                m.MovementType,
+                m.Amount,
+                m.OccurredAt,
+                m.AvailableBalanceAfter))
             .ToListAsync();
     }
 
-    
     public async Task<bool> DeleteAsync(int id)
     {
         var mov = await _db.Movements.Include(m => m.Account).FirstOrDefaultAsync(m => m.Id == id);
@@ -89,9 +115,8 @@ public class MovementService : IMovementService
 
         var hasNewer = await _db.Movements.AnyAsync(m => m.AccountId == mov.AccountId && m.OccurredAt > mov.OccurredAt);
         if (hasNewer)
-            throw new InvalidOperationException("Cannot delete a non-last movement for this account.");
+            throw new InvalidOperationException("No se puede eliminar un movimiento que no sea el último de la cuenta.");
 
-    
         if (mov.MovementType == MovementType.Credit)
             mov.Account.CurrentBalance -= mov.Amount;
         else
@@ -101,6 +126,6 @@ public class MovementService : IMovementService
         await _db.SaveChangesAsync();
         return true;
     }
-
 }
+
 

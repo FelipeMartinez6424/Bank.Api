@@ -1,151 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Bank.Api\\",
+  "WorkspaceRootPath": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\controllers\\movementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:controllers\\movementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\domain\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:domain\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\domain\\movementtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:domain\\movementtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\domain\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:domain\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\luisfmartinezg\\source\\repos\\bank.api\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\validation\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\validation\\movementvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\movementvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\validation\\movementdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\movementdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\validation\\clientvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\clientvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\validation\\clientdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\clientdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\validation\\accountvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\accountvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\validation\\accountdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\accountdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\movementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\movementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\imovementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\imovementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\middleware\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:middleware\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\domain\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:domain\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\luisfmartinezg\\source\\repos\\bank.api\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\luisfmartinezg\\source\\repos\\bank.api\\validation\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:validation\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5F67C1A-364E-4315-85ED-8A257652E453}|..\\Bank.Api.Tests\\Bank.Api.Tests.csproj|c:\\users\\admin\\bank.api.tests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5F67C1A-364E-4315-85ED-8A257652E453}|..\\Bank.Api.Tests\\Bank.Api.Tests.csproj|c:\\users\\admin\\bank.api.tests\\movementservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5F67C1A-364E-4315-85ED-8A257652E453}|..\\Bank.Api.Tests\\Bank.Api.Tests.csproj|c:\\users\\admin\\bank.api.tests\\movementendpointtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5F67C1A-364E-4315-85ED-8A257652E453}|..\\Bank.Api.Tests\\Bank.Api.Tests.csproj|c:\\users\\admin\\bank.api.tests\\bank.api.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\bank.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:bank.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\admin\\bank.api\\migrations\\20250919201252_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:migrations\\20250919201252_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5F67C1A-364E-4315-85ED-8A257652E453}|..\\Bank.Api.Tests\\Bank.Api.Tests.csproj|c:\\users\\admin\\bank.api.tests\\testauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5F67C1A-364E-4315-85ED-8A257652E453}|..\\Bank.Api.Tests\\Bank.Api.Tests.csproj|c:\\users\\admin\\bank.api.tests\\testdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|c:\\users\\luisfmartinezg\\source\\repos\\bank.api\\controllers\\movementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4725BB-F23D-41C2-A94D-DBDE32E2A560}|Bank.Api.csproj|solutionrelative:controllers\\movementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -155,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -175,502 +46,67 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T02:43:29.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-20T01:40:57.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReportService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\ReportService.cs",
-              "RelativeDocumentMoniker": "Services\\ReportService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\ReportService.cs",
-              "RelativeToolTip": "Services\\ReportService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwBUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T02:43:10Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Domain\\Client.cs",
-              "RelativeDocumentMoniker": "Domain\\Client.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Domain\\Client.cs*",
-              "RelativeToolTip": "Domain\\Client.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T04:02:35.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MovementsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Controllers\\MovementsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MovementsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Controllers\\MovementsController.cs",
-              "RelativeToolTip": "Controllers\\MovementsController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAIAwwEIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:18:48.348Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Movement.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Domain\\Movement.cs",
-              "RelativeDocumentMoniker": "Domain\\Movement.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Domain\\Movement.cs",
-              "RelativeToolTip": "Domain\\Movement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:34:00.455Z",
+              "WhenOpened": "2025-09-22T15:41:17.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MovementType.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Domain\\MovementType.cs",
-              "RelativeDocumentMoniker": "Domain\\MovementType.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Domain\\MovementType.cs",
-              "RelativeToolTip": "Domain\\MovementType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:34:07.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ReportDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Validation\\ReportDtos.cs",
+              "DocumentMoniker": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Validation\\ReportDtos.cs",
               "RelativeDocumentMoniker": "Validation\\ReportDtos.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Validation\\ReportDtos.cs",
+              "ToolTip": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Validation\\ReportDtos.cs",
               "RelativeToolTip": "Validation\\ReportDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T02:41:32.545Z",
+              "WhenOpened": "2025-09-22T15:39:15.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MovementValidators.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Validation\\MovementValidators.cs",
-              "RelativeDocumentMoniker": "Validation\\MovementValidators.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Validation\\MovementValidators.cs",
-              "RelativeToolTip": "Validation\\MovementValidators.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "Services\\ReportService.cs",
+              "ToolTip": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Services\\ReportService.cs",
+              "RelativeToolTip": "Services\\ReportService.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAgwEwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:52:57.473Z",
+              "WhenOpened": "2025-09-22T15:38:48.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MovementDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Validation\\MovementDtos.cs",
-              "RelativeDocumentMoniker": "Validation\\MovementDtos.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Validation\\MovementDtos.cs",
-              "RelativeToolTip": "Validation\\MovementDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "MovementsController.cs",
+              "DocumentMoniker": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Controllers\\MovementsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MovementsController.cs",
+              "ToolTip": "C:\\Users\\luisfmartinezg\\source\\repos\\Bank.Api\\Controllers\\MovementsController.cs",
+              "RelativeToolTip": "Controllers\\MovementsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:52:56.278Z",
+              "WhenOpened": "2025-09-22T15:27:14.166Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientValidators.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Validation\\ClientValidators.cs",
-              "RelativeDocumentMoniker": "Validation\\ClientValidators.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Validation\\ClientValidators.cs",
-              "RelativeToolTip": "Validation\\ClientValidators.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:17:02.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ClientDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Validation\\ClientDtos.cs",
-              "RelativeDocumentMoniker": "Validation\\ClientDtos.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Validation\\ClientDtos.cs",
-              "RelativeToolTip": "Validation\\ClientDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:16:11.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccountValidators.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Validation\\AccountValidators.cs",
-              "RelativeDocumentMoniker": "Validation\\AccountValidators.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Validation\\AccountValidators.cs",
-              "RelativeToolTip": "Validation\\AccountValidators.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:52:47.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AccountDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Validation\\AccountDtos.cs",
-              "RelativeDocumentMoniker": "Validation\\AccountDtos.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Validation\\AccountDtos.cs",
-              "RelativeToolTip": "Validation\\AccountDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:52:46.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MovementService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\MovementService.cs",
-              "RelativeDocumentMoniker": "Services\\MovementService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\MovementService.cs",
-              "RelativeToolTip": "Services\\MovementService.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAcwGYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:18:28.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IReportService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\IReportService.cs",
-              "RelativeDocumentMoniker": "Services\\IReportService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\IReportService.cs*",
-              "RelativeToolTip": "Services\\IReportService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T02:42:36.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IMovementService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\IMovementService.cs",
-              "RelativeDocumentMoniker": "Services\\IMovementService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\IMovementService.cs",
-              "RelativeToolTip": "Services\\IMovementService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:18:14.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\IClientService.cs",
-              "RelativeDocumentMoniker": "Services\\IClientService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\IClientService.cs",
-              "RelativeToolTip": "Services\\IClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:15:38.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\IAccountService.cs",
-              "RelativeDocumentMoniker": "Services\\IAccountService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\IAccountService.cs",
-              "RelativeToolTip": "Services\\IAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:52:02.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\ClientService.cs",
-              "RelativeDocumentMoniker": "Services\\ClientService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\ClientService.cs",
-              "RelativeToolTip": "Services\\ClientService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:17:24.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Services\\AccountService.cs",
-              "RelativeToolTip": "Services\\AccountService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:51:47.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Domain\\Person.cs",
-              "RelativeDocumentMoniker": "Domain\\Person.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Domain\\Person.cs",
-              "RelativeToolTip": "Domain\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:34:10.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Infrastructure\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Infrastructure\\AppDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:34:29.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Infrastructure\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Infrastructure\\DbInitializer.cs",
-              "RelativeToolTip": "Infrastructure\\DbInitializer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T21:37:20.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ErrorHandlingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Middleware\\ErrorHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "Middleware\\ErrorHandlingMiddleware.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Middleware\\ErrorHandlingMiddleware.cs",
-              "RelativeToolTip": "Middleware\\ErrorHandlingMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:51:40.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Domain\\Account.cs",
-              "RelativeDocumentMoniker": "Domain\\Account.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Domain\\Account.cs",
-              "RelativeToolTip": "Domain\\Account.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwAcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:33:48.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ReportsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Controllers\\ReportsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Controllers\\ReportsController.cs",
-              "RelativeToolTip": "Controllers\\ReportsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T02:43:56.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "Controllers\\ClientsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T03:17:46.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "Controllers\\AccountsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T04:28:22.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CustomWebApplicationFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api.Tests\\CustomWebApplicationFactory.cs",
-              "RelativeDocumentMoniker": "..\\Bank.Api.Tests\\CustomWebApplicationFactory.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api.Tests\\CustomWebApplicationFactory.cs",
-              "RelativeToolTip": "..\\Bank.Api.Tests\\CustomWebApplicationFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T05:02:35.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MovementServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api.Tests\\MovementServiceTests.cs",
-              "RelativeDocumentMoniker": "..\\Bank.Api.Tests\\MovementServiceTests.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api.Tests\\MovementServiceTests.cs",
-              "RelativeToolTip": "..\\Bank.Api.Tests\\MovementServiceTests.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAgwFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T05:13:30.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "MovementEndpointTests.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api.Tests\\MovementEndpointTests.cs",
-              "RelativeDocumentMoniker": "..\\Bank.Api.Tests\\MovementEndpointTests.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api.Tests\\MovementEndpointTests.cs",
-              "RelativeToolTip": "..\\Bank.Api.Tests\\MovementEndpointTests.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAIAwwDYAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T05:03:03.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Bank.Api.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api.Tests\\Bank.Api.Tests.csproj",
-              "RelativeDocumentMoniker": "..\\Bank.Api.Tests\\Bank.Api.Tests.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api.Tests\\Bank.Api.Tests.csproj",
-              "RelativeToolTip": "..\\Bank.Api.Tests\\Bank.Api.Tests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-20T05:23:06.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Bank.Api",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Bank.Api.csproj",
-              "RelativeDocumentMoniker": "Bank.Api.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Bank.Api.csproj",
-              "RelativeToolTip": "Bank.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-21T23:26:05.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "20250919201252_Initial.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api\\Migrations\\20250919201252_Initial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250919201252_Initial.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api\\Migrations\\20250919201252_Initial.cs",
-              "RelativeToolTip": "Migrations\\20250919201252_Initial.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:51:44.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "TestAuthHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api.Tests\\TestAuthHandler.cs",
-              "RelativeDocumentMoniker": "..\\Bank.Api.Tests\\TestAuthHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api.Tests\\TestAuthHandler.cs",
-              "RelativeToolTip": "..\\Bank.Api.Tests\\TestAuthHandler.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T05:02:14.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "TestDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Bank.Api.Tests\\TestDbContextFactory.cs",
-              "RelativeDocumentMoniker": "..\\Bank.Api.Tests\\TestDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\Admin\\Bank.Api.Tests\\TestDbContextFactory.cs",
-              "RelativeToolTip": "..\\Bank.Api.Tests\\TestDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T05:12:16.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAAQVAAAAAAAAAAAEwB0VAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-09-20T04:13:48.588Z"
             }
           ]
         }

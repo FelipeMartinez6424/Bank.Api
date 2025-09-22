@@ -31,11 +31,26 @@ public class AccountService : IAccountService
         return new AccountDto(acc.Id, acc.AccountNumber, acc.AccountType, acc.CurrentBalance, acc.IsActive, acc.ClientId);
     }
 
-    public async Task<IEnumerable<AccountDto>> GetAllAsync() =>
-        await _db.Accounts
-          .OrderBy(a => a.AccountNumber)
-          .Select(a => new AccountDto(a.Id, a.AccountNumber, a.AccountType, a.CurrentBalance, a.IsActive, a.ClientId))
-          .ToListAsync();
+    
+    public async Task<IEnumerable<AccountDto>> GetAllAsync(int? clientId = null, string? accountNumber = null)
+    {
+        var q = _db.Accounts.AsNoTracking().AsQueryable();
+
+        if (clientId.HasValue)
+            q = q.Where(a => a.ClientId == clientId.Value);
+
+        if (!string.IsNullOrWhiteSpace(accountNumber))
+        {
+            var n = accountNumber.Trim();
+            q = q.Where(a => a.AccountNumber.Contains(n));
+        }
+
+        return await q
+            .OrderByDescending(a => a.Id)
+            .Select(a => new AccountDto(
+                a.Id, a.AccountNumber, a.AccountType, a.CurrentBalance, a.IsActive, a.ClientId))
+            .ToListAsync();
+    }
 
     public async Task<AccountDto?> GetByIdAsync(int id) =>
         await _db.Accounts
@@ -62,3 +77,4 @@ public class AccountService : IAccountService
         return true;
     }
 }
+

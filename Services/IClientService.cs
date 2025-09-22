@@ -1,14 +1,13 @@
 ﻿using Bank.Api.Validation;
 
-namespace Bank.Api.Services;
-
 public interface IClientService
 {
-    Task<ClientDto> CreateAsync(ClientCreateDto dto);
-    Task<IEnumerable<ClientDto>> GetAllAsync();
+    Task<IEnumerable<ClientDto>> GetAllAsync(string? q = null, string? identification = null);
     Task<ClientDetailDto?> GetByIdAsync(int id);
+    Task<ClientDto> CreateAsync(ClientCreateDto dto);
     Task<bool> UpdateAsync(int id, ClientUpdateDto dto);
     Task<bool> DeleteAsync(int id);
 }
+
 
 

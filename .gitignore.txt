@@ -1,25 +1,37 @@
-cat > .gitignore << 'EOF'
-# Build results
-bin/
-obj/
-Debug/
-Release/
-
-# Visual Studio
+# VS / .NET
 .vs/
 *.user
 *.suo
-
-
-# logs
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+out/
+publish/
+TestResults/
+*.cache/
 *.log
+
+# Rider
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker local
+**/docker-compose.override.yml
+**/*.local.yml
+
+# Secrets locales (ajusta si aplica)
+appsettings.*.Local.json
+appsettings.Development.local.json
 
 # NuGet
 packages/
 *.nupkg
 
-# IDE
-.idea/
-.vscode/
-EOF
+# Otros
+*.swp
+
 

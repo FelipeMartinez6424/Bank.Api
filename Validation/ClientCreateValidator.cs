@@ -2,13 +2,13 @@
 
 namespace Bank.Api.Validation;
 
-public class ClientUpdateValidator : AbstractValidator<ClientUpdateDto>
+public class ClientCreateValidator : AbstractValidator<ClientCreateDto>
 {
-    public ClientUpdateValidator()
+    public ClientCreateValidator()
     {
         RuleFor(x => x.Name)
             .NotEmpty().WithMessage("El nombre es obligatorio.")
-            .MaximumLength(80)
+            .MaximumLength(80).WithMessage("El nombre no debe superar 80 caracteres.")
             .Matches(@"^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]+$")
             .WithMessage("El nombre solo debe contener letras y espacios.");
 
@@ -33,7 +33,15 @@ public class ClientUpdateValidator : AbstractValidator<ClientUpdateDto>
             .NotEmpty().WithMessage("El celular es obligatorio.")
             .Matches(@"^[0-9]{7,15}$")
             .WithMessage("El celular debe tener entre 7 y 15 dígitos.");
+
+        RuleFor(x => x.ClientCode)
+            .NotEmpty().WithMessage("El código de cliente es obligatorio.")
+            .Matches(@"^[A-Za-z0-9]{4,20}$")
+            .WithMessage("El código de cliente debe ser alfanumérico (4-20).");
+
+        RuleFor(x => x.Password)
+            .NotEmpty().WithMessage("La contraseña es obligatoria.")
+            .MinimumLength(4).WithMessage("La contraseña debe tener al menos 4 caracteres.");
     }
 }
-
 

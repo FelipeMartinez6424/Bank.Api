@@ -3,7 +3,6 @@ using Bank.Api.Infrastructure;
 using Bank.Api.Validation;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace Bank.Api.Services;
 
 public class ClientService : IClientService
@@ -11,7 +10,6 @@ public class ClientService : IClientService
     private readonly AppDbContext _db;
     public ClientService(AppDbContext db) => _db = db;
 
-    
     public async Task<ClientDto> CreateAsync(ClientCreateDto dto)
     {
         if (await _db.Clients.AnyAsync(c => c.ClientCode == dto.ClientCode))
@@ -31,7 +29,7 @@ public class ClientService : IClientService
         {
             Person = person,
             ClientCode = dto.ClientCode,
-            PasswordHash = dto.Password, 
+            PasswordHash = dto.Password,
             IsActive = true
         };
 
@@ -41,12 +39,33 @@ public class ClientService : IClientService
         return new ClientDto(client.Id, person.Name, client.ClientCode, client.IsActive);
     }
 
+   
+    public async Task<IEnumerable<ClientDto>> GetAllAsync(string? q = null, string? identification = null)
+    {
+        var query = _db.Clients
+            .AsNoTracking()
+            .Include(c => c.Person)
+            .Select(c => new { c, c.Person });
 
-    public async Task<IEnumerable<ClientDto>> GetAllAsync() =>
-        await _db.Clients.Include(c => c.Person)
-            .OrderBy(c => c.Person.Name)
-            .Select(c => new ClientDto(c.Id, c.Person.Name, c.ClientCode, c.IsActive))
+        if (!string.IsNullOrWhiteSpace(q))
+        {
+            var qNorm = q.Trim();
+            query = query.Where(x =>
+                x.Person.Name.Contains(qNorm) ||
+                x.c.ClientCode.Contains(qNorm));
+        }
+
+        if (!string.IsNullOrWhiteSpace(identification))
+        {
+            var idn = identification.Trim();
+            query = query.Where(x => x.Person.Identification.Contains(idn));
+        }
+
+        return await query
+            .OrderByDescending(x => x.c.Id)
+            .Select(x => new ClientDto(x.c.Id, x.Person.Name, x.c.ClientCode, x.c.IsActive))
             .ToListAsync();
+    }
 
     public async Task<ClientDetailDto?> GetByIdAsync(int id) =>
         await _db.Clients.Include(c => c.Person)
@@ -87,4 +106,5 @@ public class ClientService : IClientService
         return true;
     }
 }
+
 

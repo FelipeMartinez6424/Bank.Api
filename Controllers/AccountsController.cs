@@ -9,24 +9,28 @@ public class AccountsController : ControllerBase
     private readonly IAccountService _svc;
     public AccountsController(IAccountService svc) => _svc = svc;
 
-    [HttpGet] public async Task<IActionResult> GetAll() => Ok(await _svc.GetAllAsync());
+  
+    [HttpGet]
+    public async Task<IActionResult> GetAll([FromQuery] int? clientId, [FromQuery] string? accountNumber)
+        => Ok(await _svc.GetAllAsync(clientId, accountNumber));
 
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetById(int id)
         => (await _svc.GetByIdAsync(id)) is { } dto ? Ok(dto) : NotFound();
-    
+
     [HttpPost]
-    public async Task<IActionResult> Create(AccountCreateDto dto)
+    public async Task<IActionResult> Create([FromBody] AccountCreateDto dto)
     {
         var created = await _svc.CreateAsync(dto);
         return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
     }
-    
+
     [HttpPut("{id:int}")]
-    public async Task<IActionResult> Update(int id, AccountUpdateDto dto)
+    public async Task<IActionResult> Update(int id, [FromBody] AccountUpdateDto dto)
         => await _svc.UpdateAsync(id, dto) ? NoContent() : NotFound();
-    
+
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id)
         => await _svc.DeleteAsync(id) ? NoContent() : NotFound();
 }
+
